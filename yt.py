@@ -42,11 +42,11 @@ print(numdata.describe())
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# for column in numdata:
-#     plt.figure(figsize =(10, 5))
-#     plt.title(column + ' outliers')
-#     sns.boxplot(x=df[column], palette="rocket")
-#     plt.show()
+for column in numdata:
+    plt.figure(figsize =(10, 5))
+    plt.title(column + ' outliers')
+    sns.boxplot(x=df[column], palette="rocket")
+    plt.show()
 
 #impossible for channel to start in 1970, change to  2005
 df['started']=df['started'].replace(1970, 2005)
@@ -60,6 +60,6 @@ print(categorydf)
 myexplode = [0.2, 0, 0.4,  0.1]
 
 palette_color = sns.color_palette('rocket')
-plt.pie(categorydf, labels=categorydf['category'], colors=palette_color,
+#plt.pie(categorydf, labels=categorydf['category'], colors=palette_color,
         explode=myexplode, autopct='%.0f%%')
-plt.show()
+#plt.show()
