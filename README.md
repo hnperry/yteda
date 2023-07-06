@@ -1,4 +1,4 @@
-# Youtube Channel Exploratory Data Analysis
+# Digital Media Analytics: YouTube Channel Insights
 
 ![youtube-users](https://github.com/hnperry/yteda/assets/116209783/e852d788-26dd-4334-9932-e00e6c095ae4)
 
